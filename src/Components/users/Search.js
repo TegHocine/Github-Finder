@@ -15,7 +15,7 @@ const Search = () => {
     if (text === '') {
       alertContext.SetAlert('Please enter something', 'light');
     } else {
-      githubContext.SearchUsers('text');
+      githubContext.SearchUsers(text);
       setText('');
     }
   };
